@@ -2,10 +2,7 @@ mkdir ~/.ssh
 
 \cp /etc/ssh/sshd_config /etc/ssh/sshd_config_bak
 
-source /etc/ssh/sshd_config_bak
-echo $Port
-
-sed -i 's/Port $Port/Port 27258/g' ~/ssh/centos7x64/sshd_config
+grep 'Port ' /etc/ssh/sshd_config > ~/ssh/centos7x64/sshd_config
 
 \cp  ~/ssh/centos7x64/authorized_keys .ssh/authorized_keys
 \cp  ~/ssh/centos7x64/sshd_config /etc/ssh/sshd_config
