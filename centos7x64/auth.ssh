@@ -1,0 +1,5 @@
+mkdir ~/.ssh
+\cp  ~/ssh/centos7x64/authorized_keys .ssh/authorized_keys
+\cp  ~/ssh/centos7x64/sshd_config /etc/ssh/sshd_config
+
+systemctl restart sshd
