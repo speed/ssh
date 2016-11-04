@@ -153,4 +153,3 @@ Subsystem	sftp	/usr/libexec/openssh/sftp-server
 #	ForceCommand cvs server
 
 PermitRootLogin yes
-Port 27258
